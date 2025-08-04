@@ -9,6 +9,7 @@ body {
 header {
     position: sticky;
     top: 0;
+    z-index: 9;
 }
 
 .header-container {
@@ -16,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 80px;
 }
 
 .logo-img {
@@ -110,6 +111,7 @@ aside {
 .aside-button {
     display: none;
     width: 40px;
+    z-index: 8;
 }
 
 
@@ -135,7 +137,7 @@ aside {
 
 .actual .link-back {
     transform: translateX(0);
-    width: 300px;
+    width: 240px;
 }
 
 .link-container:hover .link-back {
@@ -208,7 +210,7 @@ main {
 
 /*========= Adaptación de Celular ========== */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
 
     /* HEADER */
@@ -273,6 +275,7 @@ main {
     }
 
     .aside-button {
+        z-index: 100;
         margin-left: 18px;
         display: flex;
         justify-content: center;
