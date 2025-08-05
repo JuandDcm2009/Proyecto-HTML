@@ -9,6 +9,7 @@ body {
 header {
     position: sticky;
     top: 0;
+    z-index: 9;
 }
 
 .header-container {
@@ -135,12 +136,10 @@ aside {
 
 .actual .link-back {
     transform: translateX(0);
-    width: 300px;
 }
 
 .link-container:hover .link-back {
     transform: translateX(0);
-    width: 300px;
 }   
 
 .link-container:hover .link-aside {
